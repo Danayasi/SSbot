@@ -13,14 +13,9 @@ async def on_ready():
     print("Готов!")
 
 
-@bot.slash_command(name="jerkoff", description="Поджеркать.(джерк джерк)")
-async def ping(ctx):
-    await ctx.send("https://cdn.discordapp.com/attachments/939879746555232349/1269984047086436403/1666b172eea9558b.gif?ex=66b20c4f&is=66b0bacf&hm=deee799251be8efcd3c804678ef185522c69625e4f541514315facec6c72b1d8&")
-
-
 @bot.slash_command(name="beat", description="Избей своего друга или врага?")
-async def ping(ctx, who:disnake.Member, tobeat:disnake.Member):
-    await ctx.send(f"{who.mention} избивает {tobeat.mention}")
+async def ping(ctx, tobeat:disnake.Member):
+    await ctx.send(f"{ctx.author.mention} избивает {tobeat.mention}")
 
 @bot.slash_command(name="random", description="Получить случайное число в промежутке введёных чисел.")
 async def ping(ctx, first_number:int, second_number:int):
