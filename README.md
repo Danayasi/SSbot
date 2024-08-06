@@ -2,7 +2,7 @@
   <img src="Img/botlogo.png" style="width: 100px;"/>
 </p>
 
-<h1 style="text-align: center;"> 
+<h1 align="center"> 
     SSBot 
 </h1>
 
@@ -10,15 +10,14 @@
   <img src="Img/Banner.png" style="width: 400px;"/>
 </p>
 
-<h3 style="text-align: center;"> 
+<h3 align="center"> 
     Бот для дискорд сервера SandStone.
  </h3>
 
-<h4 style="text-align: center;">
+<h4 align="center">
  https://discord.gg/ukmCcasFdu 
 </h4>
 
-
-<h5 style="text-align: center;"> 
+<h5 align="center">
     используя disnake
 </h5>
