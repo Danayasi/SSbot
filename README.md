@@ -15,7 +15,7 @@
  </h3>
 
 <p align="center">
-<a href=" https://discord.gg/ukmCcasFdu">Присоедениться к сообществу.<a/>  
+https://discord.gg/ukmCcasFdu
 </p>
 
 <h5 align="center">
