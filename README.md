@@ -1,2 +1,2 @@
 # botayasi
-basic discord bot on python w/ disnake
+>basic discord bot on python with disnake
