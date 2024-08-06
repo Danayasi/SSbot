@@ -14,9 +14,9 @@
     Бот для дискорд сервера SandStone.
  </h3>
 
-<h4 align="center">
- https://discord.gg/ukmCcasFdu 
-</h4>
+<p align="center">
+<a href=" https://discord.gg/ukmCcasFdu">Присоедениться к сообществу.<a/>  
+</p>
 
 <h5 align="center">
     используя disnake
