@@ -1,3 +1,4 @@
+import config
 import random
 import disnake
 from disnake.ext import commands
@@ -36,4 +37,4 @@ async def avatar(self, interaction, member: disnake.Member = None):
     await interaction.response.send_message(embed=embed)
 
 
-bot.run("")
+bot.run(config.token)
