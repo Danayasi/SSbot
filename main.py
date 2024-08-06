@@ -19,8 +19,12 @@ async def ping(ctx):
 
 
 @bot.slash_command(name="beat")
-async def ping(ctx, who, tobeat):
-    await ctx.send(f"{who} избивает {tobeat}")
+async def ping(ctx, who:disnake.Member, tobeat:disnake.Member):
+    await ctx.send(f"{who.mention} избивает {tobeat.mention}")
+
+@bot.slash_command(name="random")
+async def ping(ctx, first_number:int, second_number:int):
+    await ctx.send(f"Выбрано число в промежутке от {first_number} до {second_number}. Это число - {random.randint(first_number, second_number)}")
 
 
 @bot.slash_command(name="clear")
@@ -32,7 +36,7 @@ async def clear(self, interaction, amount: int):
 @bot.slash_command(name="avatar")
 async def avatar(self, interaction, member: disnake.Member = None):
     user = member or interaction.author
-    embed = disnake.Embed(title="Аватарк", color=0xff5252)
+    embed = disnake.Embed(title="Аватарка", color=0xff5252)
     embed.set_image(url=user.avatar.url)
     await interaction.response.send_message(embed=embed)
 
