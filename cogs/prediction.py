@@ -9,6 +9,11 @@ class Prediction(commands.Cog):
 
     @commands.slash_command(name="prediction", description="Получить ответы на все ваши вопросы, если вы затрудняетесь в ответе.")
     async def ping(ctx, message):
+
+        if message.lower() == "будет секс зимой?":
+            await ctx.send("Она его отшила.")
+            return
+
         variant = random.randint(0, 4)
         if variant == 0:
             await ctx.send("Да")
