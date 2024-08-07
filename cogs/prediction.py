@@ -7,24 +7,20 @@ class Prediction(commands.Cog):
         self.bot = bot
    
 
-    @commands.slash_command(name="prediction", description="Получить ответы на все ваши вопросы, если вы затрудняетесь в ответе.")
-    async def ping(ctx, message):
-
-        if message.lower() == "будет секс зимой?":
-            await ctx.send("Она его отшила.")
-            return
-
-        variant = random.randint(0, 4)
-        if variant == 0:
-            await ctx.send("Да")
-        elif variant == 1:
-            await ctx.send("Нет")
-        elif variant == 2:
-            await ctx.send("Наверное")
-        elif variant == 3:
-            await ctx.send("Скорее да, чем нет")
-        else:
-            await ctx.send("Скорее нет, чем да")
+    @commands.command( )
+    async def on_message(self,message):
+        if self.bot.user.mention in message.content:
+            variant = random.randint(0, 4)
+            if variant == 0:
+                message.channel.send("Да")
+            elif variant == 1:
+                message.channel.send("Нет")
+            elif variant == 2:
+                message.channel.send("Наверное")
+            elif variant == 3:
+                message.channel.send("Скорее да, чем нет")
+            else:
+                message.channel.send("Скорее нет, чем да")
 
 def setup(bot):
     bot.add_cog(Prediction(bot)) 
