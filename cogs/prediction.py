@@ -25,6 +25,7 @@ class Prediction(commands.Cog):
             await ctx.send("Скорее да, чем нет")
         else:
             await ctx.send("Скорее нет, чем да")
+       
 
 def setup(bot):
     bot.add_cog(Prediction(bot)) 
