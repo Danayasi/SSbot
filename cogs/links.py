@@ -1,5 +1,4 @@
 from disnake.ext import commands
-import random
 
 class Links(commands.Cog):
 
