@@ -20,4 +20,4 @@ for file in os.listdir("./cogs"):
         bot.load_extension(f"cogs.{file[:-3]}")
 
 
-bot.run(config.test_token)
+bot.run(config.token)
